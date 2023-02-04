@@ -1,4 +1,4 @@
-![logo](https://img.freepik.com/premium-vector/cute-email-cartoon-design_274619-1484.jpg?w=50)
+![logo](https://cdn-icons-png.flaticon.com/512/3062/3062634.png)
 # Auto-Mailer
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
