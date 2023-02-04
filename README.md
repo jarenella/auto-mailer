@@ -1,4 +1,4 @@
-![logo](https://cdn-icons-png.flaticon.com/512/3062/3062634.png)
+![logo](https://cdn-icons-png.flaticon.com/512/3062/3062634.png =250x250)
 # Auto-Mailer
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
