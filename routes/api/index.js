@@ -13,7 +13,7 @@ const containsKey = require('../../helpers/containsKey');
 // }
 
 router.post('/send/:apiKey', async (req, res) => {
-    const userKey = await req.params.apiKey;
+    const userKey = req.params.apiKey;
     
     if (containsKey(userKey)) {
         const userEmail = await req.body.email;
