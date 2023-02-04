@@ -7,7 +7,7 @@ the request must be a post request and the body should be formatted as follows:
 	{
  		"email": "testmail@mail.com",
  		"message": "Hey this is my message, hope ur well!",
-    	"receiverEmail": "receiver@gmail.com"
+    		"receiverEmail": "receiver@gmail.com"
 	}
 ```
 
