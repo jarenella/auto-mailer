@@ -4,6 +4,7 @@ require('dotenv').config();
 const sendEmail = require('../../mailer');
 const userKeys = require('../../userKeys/userKeys.js');
 const containsKey = require('../../helpers/containsKey');
+const home = require('./home');
 
 //request bodies should be formatted as such:
 // {
@@ -11,6 +12,9 @@ const containsKey = require('../../helpers/containsKey');
 // 	"message": "Hey this is my message, hope ur well!",
 //  "receiverEmail": "receiver@gmail.com"
 // }
+
+router.use('/', home)
+
 
 router.post('/send/:apiKey', async (req, res) => {
   const userKey = req.params.apiKey;
