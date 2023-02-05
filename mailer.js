@@ -22,6 +22,9 @@ function sendEmail(userEmail, message, receiverEmail) {
   transporter.sendMail(options, function(err, info) {
     if (err) {
       console.log(err);
+      console.log("User Email is " + userEmail)
+      console.log("Message is " + message)
+      console.log("Receiver Email is " + receiverEmail)
       return
     }
     console.log("Sent: " + info.response);

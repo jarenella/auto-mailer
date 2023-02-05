@@ -13,19 +13,22 @@ const containsKey = require('../../helpers/containsKey');
 // }
 
 router.post('/send/:apiKey', async (req, res) => {
-    const userKey = req.params.apiKey;
-    
-    if (containsKey(userKey)) {
-        const userEmail = await req.body.email;
-        const message = await req.body.message;
-        const receiverEmail = await req.body.receiverEmail;
+  const userKey = req.params.apiKey;
+  const reqBody = await req.body;
 
-        sendEmail(userEmail, message, receiverEmail);
+  if (containsKey(userKey)) {
+    const userEmail = await req.body.email;
+    const message = await req.body.message;
+    const receiverEmail = await req.body.receiverEmail;
 
-        res.send("Post request successfully recieved");
-    } else {
-        res.send("Not a valid API key");
-    }
+    console.log("request body is ", reqBody)
+
+    sendEmail(userEmail, message, receiverEmail);
+
+    res.send("Post request successfully recieved");
+  } else {
+    res.send("Not a valid API key");
+  }
 });
 
 module.exports = router;
