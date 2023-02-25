@@ -13,6 +13,8 @@ This API will automatically send an email to your specified receipient from a no
 
 - [Usage Information](#Usage-Information)
 
+- [Deployment](#Deployment)
+
 - [Contribution guidelines](#Contribution-guidelines)
 
 - [License](#License)
