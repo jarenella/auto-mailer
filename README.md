@@ -36,6 +36,10 @@ This API will automatically send an email to your specified receipient from a no
 
 - The receiver is the person you wnat the email sent to.
 
+# Deployment
+
+Check out the deployment at https://emailer.coffeebeen.repl.co/
+
 # Contribution guidelines
 
 - Pull requests are more likely to be accepted if they simplify or clean up code
