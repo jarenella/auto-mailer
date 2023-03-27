@@ -40,7 +40,7 @@ The server is connected with a "DoNotReply" style email that will send a message
 
 - The message is self explanitory, it's just the body of the email.
 
-- The receiver is the person you wnat the email sent to.
+- The receiver is the person you want the email sent to.
 
 # Deployment
 
