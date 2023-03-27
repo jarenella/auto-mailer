@@ -13,7 +13,7 @@ function sendEmail(userEmail, message, receiverEmail) {
   });
 
   const options = {
-    from: process.env.EMAIL,
+    from: process.env.EMAIL, //bot email stored in environment variables. same as above
     to: receiverEmail, //receiver of the message
     subject: `New mail from ${userEmail}`,
     text: `${message}. Please get back to me at ${userEmail}.`

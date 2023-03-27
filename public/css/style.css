@@ -8,3 +8,12 @@
     border-width: 20px;
     border-color: #343a40!important
 }
+
+.desc-box, .mask {
+  border-radius: 20px;
+}
+
+.desc-p {
+  margin-left: 10%;
+  margin-right: 10%
+}

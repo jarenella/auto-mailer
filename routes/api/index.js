@@ -6,15 +6,14 @@ const userKeys = require('../../userKeys/userKeys.js');
 const containsKey = require('../../helpers/containsKey');
 const home = require('./home');
 
+router.use('/', home) // <--- frontend
+
 //request bodies should be formatted as such:
 // {
 // 	"email": "testmail@mail.com",
 // 	"message": "Hey this is my message, hope ur well!",
 //  "receiverEmail": "receiver@gmail.com"
 // }
-
-router.use('/', home)
-
 
 router.post('/send/:apiKey', async (req, res) => {
   const userKey = req.params.apiKey;
@@ -27,12 +26,22 @@ router.post('/send/:apiKey', async (req, res) => {
 
     console.log("request body is ", reqBody)
 
-    sendEmail(userEmail, message, receiverEmail);
+    //if statement for if these exist first
+    if (userEmail && message && receiverEmail) {
+      sendEmail(userEmail, message, receiverEmail);
+      res.send("Post request successfully recieved");
+    } else { //if they don't exist, then there will be an error, as all fields are needed
+      res.status(500).send("All fields must be filled out.");
+    }
 
-    res.send("Post request successfully recieved");
   } else {
     res.send("Not a valid API key");
   }
 });
+
+//this is called to wake up the server from sleeping
+router.get('/wakeup', async (req, res) => {
+  res.send({ "status": "Server is awake!" });
+})
 
 module.exports = router;
