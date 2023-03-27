@@ -5,7 +5,7 @@
 
 # Description
 
-This API will automatically send an email to your specified receipient from a no-reply email, including an email telling them whereto get back to you, or your end user. This project was made because I couldn't find any free APIs that did this or that weren't barred off for the use of large companies only.
+This API will automatically send an email to your specified receipient from a no-reply email, including an email telling them where to get back to you, or your end user. This project was made because I couldn't find any free APIs that did this or that weren't barred off for the use of large companies only.
 
 Why did I make this project? Let's say your making a static front end application and you want users to be able to send an email. Sure you could use an HTML mailto href, but that will open up a new window which isn't the best UX for most end users. Instead, it's often great to have an HTML form that will send an email on submit. But for this, a server needs to be able to process these requests and send the email for you. This project serves that purpose. It can be the back end API you call when your static front end app needs to automatically send an email.
 
